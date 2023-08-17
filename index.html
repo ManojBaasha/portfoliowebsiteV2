@@ -8,20 +8,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Manoj's Portfolio</title>
+    <!-- script.js -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="name">Manoj</div>
-        <ul class="menu">
+    <div>
+        <nav class="navbar">
+            <div class="name">Manoj</div>
             <ul class="menu">
-                <li><a class="menu-link">Home</a></li>
-                <li><a class="menu-link">Works</a></li>
-                <li><a class="menu-link">About Me</a></li>
-                <li><a class="menu-link">Contact</a></li>
-            </ul>
-    </nav>
-    <main class="content">
-        <!-- Your content goes here -->
-    </main>
+                <ul class="menu">
+                    <li><a class="menu-link">Home</a></li>
+                    <li><a class="menu-link">Works</a></li>
+                    <li><a class="menu-link">About Me</a></li>
+                    <li><a class="menu-link">Contact</a></li>
+                </ul>
+        </nav>
+        <main class="content">
+            <div class="left-box">
+                <div class="name">
+                    <h2 class="text_shadows">Manoj</h2>
+                </div>
+                <div class="simple_name">Hi there,</div>
+                <div class="description">
+                I am a sophomore studying computer engineering at UC Davis. I work as an embedded systems engineer and am passionate about coding and building interesting projects. I'm excited about new technologies and software and spend my free time working on projects and hitting the gym.
+                </div>
+            </div>
+            <div class="right-box">
+                <div id="container">
+                    <span id="text1"></span>
+                    <span id="text2"></span>
+                </div>
+                
+                <svg id="filters">
+                    <defs>
+                        <filter id="threshold">
+                            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                                    0 1 0 0 0
+                                                    0 0 1 0 0
+                                                    0 0 0 255 -140" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
